@@ -13,9 +13,11 @@ Code files: /src/main
   - Note that you could move this images directory anywhere you like, as long as the imagePath property is updated accordingly.
 
   - Update the bootRun task in build.gradle so that the properties.home variable is set to the directory that contains your eCommerce.properties file. Unless you’ve placed the properties file somewhere in the project directory, this value must be an absolute path. For example, the bootRun task may look as follows:
-    ```bootRun {
+    ```
+    bootRun {
         jvmArgs = [“-Dproperties.home=/Users/kayla/Code/td/properties”]
-    }```
+    }
+    ```
   - This would require your properties file to be located at `/Users/kayla/Code/td/properties/eCommerce.properties`
 
 - Run and preview the application:
